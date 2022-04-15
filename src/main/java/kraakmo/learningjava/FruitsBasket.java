@@ -14,31 +14,19 @@ public class FruitsBasket {
                 appleCounter++;
             }
         }
-        System.out.println("The total number of fruits in Basket: " + (orangeCounter + appleCounter));
 
-        int howManyOranges = 0;
-        int howManyApples = 0;
-
-        for(int i =0; i < fruit.length; i++) {
-            if(fruit[i].equals("Orange")){
-                howManyOranges++;
-            }
-        }
-        String[] oranges = new String[howManyOranges];
+        String[] oranges = new String[orangeCounter];
         for(int i = 0; i < oranges.length; i++) {
             oranges[i] = "Oranges";
         }
-        System.out.println("Number of oranges: " + oranges.length);
 
-        for(int i =0; i < fruit.length; i++) {
-            if(fruit[i].equals("Apple")){
-                howManyApples++;
-            }
-        }
-        String[] apples = new String[howManyApples];
+        String[] apples = new String[appleCounter];
         for(int i = 0; i < oranges.length; i++) {
             oranges[i] = "Apples";
         }
+
+        System.out.println("The total number of fruits in Basket: " + (orangeCounter + appleCounter));
+        System.out.println("Number of oranges: " + oranges.length);
         System.out.println("Number of apples: " + apples.length);
     }
 }
